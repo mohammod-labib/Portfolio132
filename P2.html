@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylep2.css">
+        <link rel="stylesheet" href="page2-css/mp2.css">
+    </head>
+    <body>
+
+
+ 
+
+
+
+    <!-- it is the mother page of p2-->
+
+      <a id="bh1" href="index.html"><div><b>&larr;Back home </b></div>
+        </a>
+         <a id="yts" href="https://youtube.com/@ssap81827?si=mt5c5Bb_zoAAoXh-">
+            <div><b>My channel </b></div>  </a>
+        
+                <div id="qp12"></div>
+                 <div id="stl1"></div>
+                 <div id="stl2"></div>
+                 <div id="stl133"></div>
+                 <div id="c11">
+                 <p class="selectpage">&#9664;</p>
+                 <a id="cp20" href="P2.html">Details</a>
+                 <a id="cp21" href="p21.html">Presentation <br> Design</a>
+                 <a id="cp22" href="p22.html">Writing</a>
+                 <a id="cp23" href="p23.html">Coding</a>
+                 <a id="cp24" href="p24.html">Graphic <br> Design</a>
+                 <a id="cp25" href="p25.html">Study</a>
+                 </div>
+                 
+                 
+                 
+                 <div id="headerg1"> 
+                 
+                 <a class="Frontend" href=""><b>Frontend</b></a>
+                 <a class="Projects" href=""><b>Projects</b></a>
+                 <a class="JavaScript" href=""><b>JavaScript</b></a>
+                 <a class="Coding" href=""><b>Coding</b></a>
+                 <a class="AI" href=""><b>AI</b></a>
+                 
+                 </div>
+
+
+       
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--in there is the page of p20-->
+
+        
+
+             <p id="cr"><b>My certificates</b></p>
+
+             
+
+          <img class="zoom-img" id="container3" src="img10/cmso.png"> 
+    
+               <img class="zoom-img" id="container2" src="img10/wrc.png"> 
+    
+                   <img class="zoom-img" id="container" src="img10/bc11.jpg"> 
+    
+    <div class="image-section">
+    <div class="image-card reveal">
+                     <img class="zoom-img" id="imgp12" src="img10/bc12.jpg"> 
+                            <h3  id="ps35" >Presentation Slide</h3>
+                </div>
+                    <div class="image-card reveal">
+                       <img  class="zoom-img" id="imgwe1" src="img10/wex1.png"> 
+                        <h3 id="vs36" >VS Code</h3>
+                   </div> 
+                       </div>
+  
+                 
+                 <video id="v1" src="img10/pct1.mp4" type="video/mp4" 
+                 controls loop autoplay="autoplay" >Chart presentation
+                 </video>
+
+                 <p id="pv3"><b>Presentation Video</b></p>
+                 <p id="ps34"><b>Presentation Slide</b></p>
+               
+                 
+
+
+
+<!--special fo p20-->
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img10/bc3.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img10/bst23.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img10/bc2.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+ 
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+                <script >     
+                    
+             //all picture
+         // popup container বানাও
+          const popup = document.createElement("div");
+    popup.classList.add("image-popup");
+      popup.innerHTML = `
+       <span class="close-btn">&times;</span>
+       <img src="">
+        `;
+      document.body.appendChild(popup);
+
+    const popupImage = popup.querySelector("img");
+    const closeBtn = popup.querySelector(".close-btn");
+
+          // সব zoom-img সিলেক্ট করো
+        document.querySelectorAll(".zoom-img").forEach(img => {
+           img.addEventListener("click", () => {
+           popupImage.src = img.src; 
+            // clicked image load
+           popup.classList.add("active");
+      });
+  });
+
+
+                // close button
+        closeBtn.addEventListener("click", () => {
+           popup.classList.remove("active");
+      });
+
+                  // background এ ক্লিক করলে popup close
+        popup.addEventListener("click", e => {
+             if (e.target === popup) popup.classList.remove("active");
+        });
+
+
+            </script>
+<script>
+let slideIndex = 0;
+showSlides();
+
+/function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}/
+</script>
+<script>
+function revealOnScroll() {
+    const elements = document.querySelectorAll('#vs36');
+ 
+
+    elements.forEach(el => {
+        let windowHeight = window.innerHeight;
+        let elementTop = el.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+            el.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+
+// First load এও অ্যানিমেশন চেক করবে
+revealOnScroll();
+
+</script>
+
+
+    </body>
+</html>

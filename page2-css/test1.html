@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="test1.css">
+</head>
+<body>
+
+<img src>
+
+<script>
+// popup container বানাও
+const popup = document.createElement("div");
+popup.classList.add("image-popup");
+popup.innerHTML = `
+    <span class="close-btn">&times;</span>
+    <img src="">
+`;
+document.body.appendChild(popup);
+
+const popupImage = popup.querySelector("img");
+const closeBtn = popup.querySelector(".close-btn");
+
+// সব zoom-img সিলেক্ট করো
+document.querySelectorAll(".zoom-img").forEach(img => {
+    img.addEventListener("click", () => {
+        popupImage.src = img.src; 
+        // clicked image load
+        popup.classList.add("active");
+    });
+});
+
+// close button
+closeBtn.addEventListener("click", () => {
+    popup.classList.remove("active");
+});
+
+// background এ ক্লিক করলে popup close
+popup.addEventListener("click", e => {
+    if (e.target === popup) popup.classList.remove("active");
+});
+</script>
+</body>
+</html>

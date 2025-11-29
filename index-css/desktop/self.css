@@ -1,0 +1,229 @@
+          /*It is the first slide*/
+#box1{
+    background-color: rgb(4, 247, 105);
+    position: absolute;
+    top:255px;
+    left: 66%;
+    width: 259px;
+    height: 230px;
+    border-radius: 5px ;
+    border-color: rgb(118, 237, 229);
+    filter: blur(50px);
+    content:"";
+    z-index: 1;
+       animation-name:sizerbox;
+ animation-duration:4s;
+}
+         @keyframes sizerbox {
+   from {
+       width:0px;
+   }
+   to {
+        width:259px;
+   
+   }
+}
+#img1{
+    width: 340px;
+  border-radius:50%;
+  border: hsl(120, 12%, 97%) solid;
+  border-width: 0.20cm;
+   position: absolute;
+   z-index: 10;
+   top: 205px;
+   left: 64%;
+   order: 2;
+   margin-top: 0px;
+   clip-path: circle(50% at 50% 50%);
+
+}
+
+#line1{
+    background-color: white;
+    width: 0;
+    height: 4px;
+    position: absolute;
+    top: 415px;
+    left: 5%;
+    z-index: 10;
+}
+
+#self1{
+    color: white;
+    width: 92%;
+    height: 2cm;
+    font-size: 65px;
+    position: absolute;
+    top:190px;
+    left: 8%;
+}
+#pro1{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 15% ;
+    color: white;
+    font-size: 40px;
+    width: 64%;
+    height:2cm;
+    position: absolute;
+    top:310px;
+    left: 8%;
+    
+  
+}
+#line12{
+    background-color: white;
+    width: 100%;
+    height: 7px;
+    position: absolute;
+    top: 780px;
+    left: 0%;
+    z-index: 10;
+    
+}
+
+           /*It is the second  slide*/
+           
+                   #myself1{
+                   
+    color: white;      top: 1570px;  position: absolute;
+    left:60%;
+    font-size: 25px;    width: 35%;
+
+  }
+
+    .imgs2{
+            width:520px; position:absolute; top:888px; left:7%; z-index:2; border-radius:52%;
+    
+    }
+    .boxs2{
+           width:410px; height:410px; position:absolute; top:970px; left:10%; 
+           background-color:red; border-radius:50%; border: 25px black solid; 
+    }
+    
+            /*Some details box */
+            
+        .box-year{
+           width:12%; height:120px; position:absolute; top:1040px; left:57%; 
+           background: linear-gradient(125deg, #33ccff 0%, #ff99cc 91%); 
+           
+            justify-content:center; display:inline-flex; align-items:center;
+              padding: 8px;
+        border-radius: 16px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        align-items: center;
+        font-weight: 500;
+        transition: 0.25s ease;
+            
+          }
+          .box-year p{
+                      font-size:31px; font-weight:bolder; font-family:"Inter", sans-serif;
+
+          }
+               .box-h .box-year:hover {
+        transform: translateY(-10px);
+    }
+   
+    .box-1{
+           width:12%; height:120px; position:absolute; top:1040px; left:72%; 
+                      background: linear-gradient(125deg, #33ccff 0%, #ff99cc 91%); 
+           
+            justify-content:center; display:inline-flex; align-items:center;
+              padding: 8px;
+        border-radius: 16px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        align-items: center;
+        font-weight: 500;
+        transition: 0.25s ease;
+          }
+                        .box-1h .box-1:hover {
+        transform: translateY(-10px);
+    }
+   
+       .box-2{
+           width:12%; height:120px; position:absolute; top:1200px; left:57%; 
+                  background: linear-gradient(125deg, #33ccff 0%, #ff99cc 91%); 
+           
+            justify-content:center; display:inline-flex; align-items:center;
+              padding: 8px;
+        border-radius: 16px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        align-items: center;
+        font-weight: 500;
+        transition: 0.25s ease;
+          }
+                        .box-2h .box-2:hover {
+        transform: translateY(-10px);
+    }
+   
+       .box-3{
+           width:12%; height:120px; position:absolute; top:1200px; left:72%; 
+               background: linear-gradient(125deg, #33ccff 0%, #ff99cc 91%); 
+           
+            justify-content:center; display:inline-flex; align-items:center;
+              padding: 8px;
+        border-radius: 16px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        align-items: center;
+        font-weight: 500;
+        transition: 0.25s ease;
+          }
+                 .box-3h .box-3:hover {
+        transform: translateY(-10px);
+    }
+    
+    .self-information-box2{
+              position:absolute; top:1670px; left:54%; 
+              width:35%; height:270px;
+              background-color:yellow;
+           justify-content:center; display:inline-flex; align-items:center;
+           padding:2%; 
+           border-radius:50px;
+    }
+    .self-information-box2 #mys1{               
+    color: black;    
+    font-size: 25px;  
+    font-weight:bolder;
+    width:100%;
+    justify-content:center; display:inline-flex; align-items:center;
+
+  }
+      .self-information-box1{
+              position:absolute; top:1670px; left:9%; 
+              width:35%; height:270px;
+              background-color:yellow;
+           justify-content:center; display:inline-flex; align-items:center;
+           padding:2%; 
+           border-radius:50px;
+    }
+/* scroll animation*/
+
+      :root {
+  --anim-duration: 1.7s; /* ডিফল্ট — 0.5s থেকে 1s মধ্যে সেট করলে ভালো থাকে */
+  --anim-ease: cubic-bezier(.2,.9,.2,1);
+}
+
+/* reduced motion শ্রদ্ধা */
+@media (prefers-reduced-motion: reduce) {
+  [id^="anim-"] {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+[id^="anim-"] {
+  opacity: 0;
+  transform: translateY(58px) scale(0.995);
+  transition:
+    opacity var(--anim-duration) var(--anim-ease),
+    transform var(--anim-duration) var(--anim-ease);
+  will-change: opacity, transform;
+  }
+  /* ইন-ভিউ হলে এটা অ্যাক্টিভ হবে */
+[id^="anim-"].in-view {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+

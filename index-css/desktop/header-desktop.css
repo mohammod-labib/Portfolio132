@@ -1,0 +1,147 @@
+.topnav{
+      display:none;
+}
+
+
+  .portfoliologo img{  
+                 display: inline-flex; justify-content: center; align-items: center;
+               position:fixed;  top:0px; left:5%; height:1.5cm; width:3.4cm; z-index:1100;
+             
+                  
+  }
+.p20{
+     display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width:7%;
+    height: 1.5cm;
+    color: white;
+   
+
+    font-family:;
+  
+    text-decoration: none;
+    
+    position: absolute;
+    top:0;
+    left:62%;
+  
+    font-size: 20px;
+  
+    
+}
+
+.p20:hover{
+    color: #4ade65;
+    background-color:rgb(33, 32, 37);
+}
+.s41{
+         display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 7%;
+    height: 1.5cm;
+    color: #4ade65;
+   
+
+    font-family:;
+   
+    text-decoration: none;
+    
+    position: absolute;
+    top: 0;
+
+    left:55%;
+  
+    font-size: 20px;
+  
+}
+.s41:hover{
+    color: #4ade65;
+    background-color:rgb(33, 32, 37);
+}
+.s42{
+         display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 7%;
+    height: 1.5cm;
+    color: white;
+   
+
+    font-family:;
+  
+    text-decoration: none;
+    
+    position: absolute;
+    top: 0;
+    left:69%;
+  
+    font-size: 20px;
+  
+}
+.s42:hover{
+    color: #4ade65;
+    background-color:rgb(33, 32, 37);
+}
+.s43{
+         display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 7%;
+    height: 1.5cm;
+    color: white;
+   
+
+    font-family:;
+  
+    text-decoration: none;
+    
+    position: absolute;
+    top: 0;
+    left:76%;
+  
+    font-size: 20px;
+  
+}
+.s43:hover{
+    color: #4ade65;
+    background-color:rgb(33, 32, 37);
+}
+.s44{
+         display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 7%;
+    height: 1.5cm;
+    color: white;
+   
+
+    font-family:;
+  
+    text-decoration: none;
+    
+    position: absolute;
+    top: 0;
+    left:83%;
+  
+    font-size: 20px;
+  
+}
+.s44:hover{
+    color: #4ade65;
+    background-color:rgb(33, 32, 37);
+}
+header{
+position:fixed;
+width:100%;
+top:0;
+left:0;
+height:1.5cm;
+background: #333;
+z-index:1000;
+align-items:center;
+display:flex;
+justify-content:space-between;
+}
+

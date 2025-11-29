@@ -1,0 +1,190 @@
+                          /*view12 for start */
+    
+    
+    
+           .view12 {
+          position:relative;  top:-6cm; 
+
+        }
+        #skills {
+        position:absolute;
+        top:810px;
+        left:7%;
+        font-size:30px;
+        background:linear-gradient(to right,#ff00ff, #00ffff,#0099ff);
+        background-clip:text;
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+        text-transform:uppercase;
+        text-align:center;
+        background-size:200%;
+
+}
+ 
+.block1{
+   animation: appear 5s linear;
+   animation-timeline: view();
+   animation-range: entry 0% cover 20% ;
+    position: absolute;
+    top:1300px;
+    background-color: hsl(133, 100%, 50%);
+    width:500px;
+    height: 40px;
+    left: 20%;
+}
+.block2{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20% ;
+     position: absolute;
+     top:1400px;
+     background-color: hsl(133, 100%, 50%);
+     width:500px;
+     height: 40px;
+     left: 20%;
+ }
+ .block3{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20% ;
+     position: absolute;
+     top:1500px;
+     background-color: hsl(133, 100%, 50%);
+     width:500px;
+     height: 40px;
+     left: 20%;
+ }
+ 
+.block11{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20% ;
+     position: absolute;
+     top:1307px;
+     background-color: hsl(0, 0%, 5%);
+     width:270px;
+     height: 27px;
+     left: 21%;
+ }
+ .block21{
+     animation: appear 5s linear;
+     animation-timeline: view();
+     animation-range: entry 0% cover 20% ;
+      position: absolute;
+      top:1407px;
+      background-color: hsl(0, 0%, 5%);
+      width:400px;
+      height: 27px;
+      left: 21%;
+  }
+  .block31{
+     animation: appear 5s linear;
+     animation-timeline: view();
+     animation-range: entry 0% cover 20% ;
+      position: absolute;
+      top:1507px;
+      background-color: hsl(0, 0%, 0%);
+      width:380px;
+      height: 27px;
+      left: 21%;
+  }
+
+#pwd{
+    color: white;
+    top: 1269px;
+    position: absolute;
+    left: 12%;
+    font-size: 30px;
+}
+.cl123{
+    background-color: hwb(106 13% 53%);
+    border-radius: 20px;
+    width: 400px;
+    height: 1.2cm;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1298px;
+    left: 62%;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+.cl123:hover{
+        background-color: hwb(0 5% 94%);
+    box-shadow: 0 0 35px rgb(0, 255, 0);
+}
+
+#pwr{
+    color: white;
+    top: 1370px;
+    position: absolute;
+    left: 12%;
+    font-size: 30px;
+}
+.cl223{
+    background-color: hwb(46 2% 32%);
+    border-radius: 20px;
+    width: 400px;
+    height: 1.2cm;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1398px;
+    left: 62%;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+.cl223:hover{
+    background-color: hwb(0 5% 94%);
+    box-shadow: 0 0 35px rgb(229, 255, 0);
+}
+#ppd{
+    color: white;
+    top: 1470px;
+    position: absolute;
+    left: 2%;
+    font-size: 30px;
+}
+.cl323{
+    background-color: hwb(194 2% 32%);
+    border-radius: 20px;
+    width: 400px;
+    height: 1.2cm; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1498px;
+    left: 62%;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+.cl323:hover{
+    background-color: hwb(0 5% 94%);
+    box-shadow:  0 0 38px hsl(0, 100%, 50%);
+}
+#pwriter{
+    color: white;
+    width: 16cm;
+    top: 1010px;
+    position: absolute;
+    left: 7%;
+    font-size: 60px;
+    z-index: 20;
+
+}
+  #line13{
+    background-color: white;
+    width: 100%;
+    height: 7px;
+    position: absolute;
+    top: 1700px;
+    left: 0%;
+    z-index: 10;
+    
+ }
